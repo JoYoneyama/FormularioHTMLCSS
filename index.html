@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <div>
+            <h1>Faça seu cadastro</h1>
+        </div>
+        <form>
+            <fieldset>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label>Qual o seu gênero?</label>
+                    <label>
+                        <input type="radio" name="genero" value="masculino">Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="feminino">Feminino
+                    </label>
+                </div>
+                <div>
+                    <label>Idade</label>
+                    <select id="idade">
+                        <option>17</option>
+                        <option>18</option>
+                        <option>Mais de 18</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label>Selecione os instrumentos que você quer tocar:</label>
+                    <br><br>
+                    <label for="instrumento1">
+                        <input type="checkbox" id="instrumento1" name="instrumento1" value="Guitarra">Guitarra
+                    </label>
+                    <label for="instrumento2">
+                        <input type="checkbox" id="instrumento2" name="instrumento2" value="Bateria">Bateria
+                    </label>
+                    <label for="instrumento3">
+                        <input type="checkbox" id="instrumento3" name="instrumento3" value="Baixo">Baixo
+                    </label>
+                    <label for="instrumento4">
+                        <input type="checkbox" id="instrumento4" name="instrumento4" value="Teclado">Teclado
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
