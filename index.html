@@ -10,28 +10,30 @@
         <title>Cadastro</title>
     </head>
     <body>
-        <div>
-            <h1>Faça seu cadastro</h1>
-        </div>
-        <form>
+        <form class="fundoBranco">
+            <div>
+                <h1>Faça seu cadastro</h1>
+            </div>
             <fieldset>
-                <div>
+                <div class="campoNome">
                     <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                 </div>
-                <div>
+                <div class="campoSobrenome">
                     <label for="sobrenome">Sobrenome: </label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
                 <br>
-                <div>
+                <div class="campoEmail">
                     <label for="email">E-mail: </label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
             </fieldset>
+            <hr class="linha">
             <fieldset>
-                <div>
+                <div class="genero">
                     <label>Qual o seu gênero?</label>
+                    <br>
                     <label>
                         <input type="radio" name="genero" value="masculino">Masculino
                     </label>
@@ -39,7 +41,7 @@
                         <input type="radio" name="genero" value="feminino">Feminino
                     </label>
                 </div>
-                <div>
+                <div class="idade">
                     <label>Idade</label>
                     <select id="idade">
                         <option>17</option>
@@ -50,19 +52,19 @@
             </fieldset>
             <fieldset>
                 <div>
-                    <label>Selecione os instrumentos que você quer tocar:</label>
+                    <label class="inst">Selecione os instrumentos que você quer tocar:</label>
                     <br><br>
                     <label for="instrumento1">
-                        <input type="checkbox" id="instrumento1" name="instrumento1" value="Guitarra">Guitarra
+                        <input class="caixaInst1" type="checkbox" id="instrumento1" name="instrumento1" value="Guitarra">Guitarra
                     </label>
                     <label for="instrumento2">
-                        <input type="checkbox" id="instrumento2" name="instrumento2" value="Bateria">Bateria
+                        <input class="caixaInst" type="checkbox" id="instrumento2" name="instrumento2" value="Bateria">Bateria
                     </label>
                     <label for="instrumento3">
-                        <input type="checkbox" id="instrumento3" name="instrumento3" value="Baixo">Baixo
+                        <input class="caixaInst" type="checkbox" id="instrumento3" name="instrumento3" value="Baixo">Baixo
                     </label>
                     <label for="instrumento4">
-                        <input type="checkbox" id="instrumento4" name="instrumento4" value="Teclado">Teclado
+                        <input class="caixaInst" type="checkbox" id="instrumento4" name="instrumento4" value="Teclado">Teclado
                     </label>
                 </div>
             </fieldset>
